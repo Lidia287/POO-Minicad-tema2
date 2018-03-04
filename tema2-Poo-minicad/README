@@ -1,0 +1,32 @@
+
+The classes used : 
+Shape : Canvas , Circle, Diamond , Line , Polygon, Rectangle, Square, Triangle
+ShapeFactory
+Painter 
+Main
+
+
+Explanation : 
+Shape - base class from which i extends the others :
+
+Canvas : the class in which i use singleton pattern , it contains the image 
+
+Line - i created a set method , to be able to use it when i draw the lines for 
+	the other forms
+
+Other classes constructors receive a string = line that was read and parse 
+	it to complete the object's characteristics
+
+
+ShapeFactory - the class in which i used factory principle 
+
+Painter - flood fill iterative with queue - using 2 queues for the x and y , 
+	check on 4 directions - the target color is the border color , 
+	which if reached it stops, and the replacement is the inside color 
+	given in the input ; every time , flood fill checks if the 
+	current pixel verified matches the target color
+
+draw for circle - using Bresenham algorithm 
+
+
+draw for rectangle and square : the filling of color is done with 2 fors
